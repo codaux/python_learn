@@ -1,13 +1,15 @@
-import random
-hads = random.randint(a=1,b=99)
-print(hads)
-javab = input('say me ')
-javab = str(javab)
-while javab != 'd':
-    if javab == 'b':
-        b = hads
-        hads = random.randint(a,b)
-    if javab == 'k':
-        a = hads
-        hads = random.randint(a,b)
-    print(hads)
+def aval(a):  
+    b = a - 1
+    while b != 1:
+        if a % b == 0:
+            return('not prime')
+            break
+        else:
+            b = b - 1
+    else:
+        return('prime')
+
+c = 10000000
+while aval(c) != 'prime':
+    c = c - 1
+print(c)
