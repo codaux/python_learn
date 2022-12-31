@@ -64,7 +64,7 @@ for x in chann:
 #print(alls)
     
 for x in chann64:    
-    w = requests.get (x , headers = headers).text
+    w = requests.get (x , headers = headers , proxies=p).text
     #print(w)
     w = base64.b64decode(w)
     #wx = w.split('\r\n')
