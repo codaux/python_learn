@@ -33,8 +33,9 @@ def natj (team):
     #return {"name":team , "wins":wins , "lose":loses , "draws":draws, "goal_difference":goal_difference , "points":points}
     return [team , wins , loses , draws, goal_difference , points]
 
-kol = [natj("Iran") , natj("Spain") , natj("Morocco") , natj("Portugal")]
-kol2 = sorted(kol , key=itemgetter(5,1,0))
+kol1 = [natj("Iran") , natj("Spain") , natj("Morocco") , natj("Portugal")]
+kol2 = sorted(kol1 , key=itemgetter(0))
+kol3 = sorted(kol2 , reverse=True , key=itemgetter(5,1))
 
-for t in kol2:
+for t in kol3:
     print (str(t[0]) + "  wins:"+str(t[1]) + " , loses:"+str(t[2]) + " , draws:"+str(t[3]) + " , goal difference:"+str(t[4]) + " , points:"+str(t[5]))
