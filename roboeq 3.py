@@ -46,7 +46,7 @@ while True:
 for kod in kodha:
     data.append(zoj(kod.split(" / ")[0] , kod.split(" / ")[1]))
 
-#print (data)
+print (data)
 
 #print (str(crawl ("0101009")))
 header = ["shenase1", "name1" , "@pic_path1" , "shenase2", "name2" , "@pic_path2"]
